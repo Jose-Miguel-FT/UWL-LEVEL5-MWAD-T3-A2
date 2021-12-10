@@ -16,40 +16,53 @@ function MedicalTreatmentPanel() {
   return (
     <div>
       <input
+        placeholder="Treatment ID"
         type="text"
         value={treatId}
         onChange={(event) => setTreatId(event.target.value)}
       />
-
       <input
+        placeholder="Treat Coursee ID"
         type="text"
         value={treatCourseId}
         onChange={(event) => setTreatCourseId(event.target.value)}
       />
-
       <input
+        placeholder="Type"
         type="text"
         value={type}
         onChange={(event) => setType(event.target.value)}
       />
-
       <input
+        placeholder="Category"
         type="text"
         value={category}
         onChange={(event) => setCategory(event.target.value)}
       />
-
       <input
+        placeholder="Name"
         type="text"
         value={name}
         onChange={(event) => setName(event.target.value)}
       />
-
       <input
         type="date"
         value={startDate}
         onChange={(event) => setStartDate(event.target.value)}
       />
+      <br />
+      {treatId}
+      <br />
+      {treatCourseId}
+      <br />
+      {type}
+      <br />
+      {category}
+      <br />
+      {name}
+      <br />
+      {startDate}
+      <br />
     </div>
   );
 }
